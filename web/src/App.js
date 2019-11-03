@@ -55,7 +55,7 @@ export default class App extends React.PureComponent {
         <AutoSizer>
           {(({width, height}) => width === 0 || height === 0 ? null : (
 
-        <ReactSvgPanZoomLoader src="logo.svg" render= {(content) => (
+        <ReactSvgPanZoomLoader src="primes.svg" render= {(content) => (
 
         <ReactSVGPanZoom
           width={width} height={height}
@@ -65,13 +65,11 @@ export default class App extends React.PureComponent {
 
           onClick={event => console.log('click', event.x, event.y, event.originalEvent)}
         >
-          <svg width={617} height={316}>
+          <svg width={3480} height={3480}>
           <g>
-              <rect x="400" y="40" width="100" height="200" fill="#4286f4" stroke="#f4f142"/>
-              <circle cx="108" cy="108.5" r="100" fill="#0ff" stroke="#0ff"/>
-              <circle cx="180" cy="209.5" r="100" fill="#ff0" stroke="#ff0"/>
-              <circle cx="220" cy="109.5" r="100" fill="#f0f" stroke="#f0f"/>
-            </g>
+          <rect x="740" y="740" width="2000" height="2000" fill="#a0a0a0" stroke="#f4f142"/>
+          <rect x="1240" y="1240" width="1000" height="1000" fill="#ffffff" stroke="#f4f142"/>
+           </g>
 
           {content}
           </svg>
